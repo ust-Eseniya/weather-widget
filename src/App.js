@@ -11,7 +11,7 @@ const WeatherWidget = () => {
     if (query) {
       try {
         setLoading(true);
-        const apiKey = '496682d4b33c6e8a6ef861f9dfed7282I_KEY';
+        const apiKey = '496682d4b33c6e8a6ef861f9dfed7282';
         const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${query}&appid=${apiKey}`;
         const response = await axios.get(apiUrl);
         setWeather(response.data);
